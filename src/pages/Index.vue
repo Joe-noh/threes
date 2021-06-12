@@ -3,6 +3,9 @@
     <li>
       <router-link to="/basic-geometries">Basic Geometries</router-link>
     </li>
+    <li>
+      <router-link to="/css3d">CSS 3D</router-link>
+    </li>
   </ul>
 </template>
 
