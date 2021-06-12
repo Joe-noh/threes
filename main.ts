@@ -75,9 +75,9 @@ controls.target.y = 25
 controls.update()
 
 function animate() {
-	requestAnimationFrame(animate)
+  requestAnimationFrame(animate)
 
-	renderer.render(scene, camera)
+  renderer.render(scene, camera)
 }
 
 animate()
