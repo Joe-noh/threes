@@ -6,6 +6,11 @@
     "serve": "vite preview"
   },
   "devDependencies": {
+    "@types/three": "^0.129.1",
     "vite": "^2.3.7"
+  },
+  "dependencies": {
+    "ress": "^4.0.0",
+    "three": "^0.129.0"
   }
 }
