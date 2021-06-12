@@ -1,5 +1,9 @@
 <template>
-  <router-view />
+  <ul class="index">
+    <li>
+      <router-link to="/basic-geometries">Basic Geometries</router-link>
+    </li>
+  </ul>
 </template>
 
 <script lang="ts">
