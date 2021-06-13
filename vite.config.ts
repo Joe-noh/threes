@@ -2,6 +2,7 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
 export default defineConfig({
-  base: '/threes',
-  plugins: [vue()]
+  base: '/threes/',
+  plugins: [vue()],
+  assetsInclude: ['src/gltf/suzanne.gltf']
 })

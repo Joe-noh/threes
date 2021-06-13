@@ -6,6 +6,9 @@
     <li>
       <router-link to="/css3d">CSS 3D</router-link>
     </li>
+    <li>
+      <router-link to="/gltf">GLTF</router-link>
+    </li>
   </ul>
 </template>
 
