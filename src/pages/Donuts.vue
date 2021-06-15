@@ -9,8 +9,7 @@
     Scene,
     HemisphereLight,
     WebGLRenderer,
-    Color,
-    Vector3
+    Color
   } from 'three'
   import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
   import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
@@ -62,7 +61,7 @@
 
         const controls = new OrbitControls(camera, renderer.domElement)
         controls.enableZoom = false
-        controls.target = new Vector3(5, 5, 5)
+        controls.target.set(5, 5, 5)
         controls.update()
 
         function animate() {
