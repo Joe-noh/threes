@@ -4,5 +4,5 @@ import vue from '@vitejs/plugin-vue'
 export default defineConfig({
   base: '/threes/',
   plugins: [vue()],
-  assetsInclude: ['src/gltf/suzanne.gltf']
+  assetsInclude: ['src/gltf/*.gltf']
 })
