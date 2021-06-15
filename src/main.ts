@@ -6,6 +6,7 @@ import Index from './pages/Index.vue'
 import BasicGeometries from './pages/BasicGeometries.vue'
 import CSS3D from './pages/CSS3D.vue'
 import GLTF from './pages/GLTF.vue'
+import Donuts from './pages/Donuts.vue'
 
 const app = createApp(App)
 const router =  createRouter({
@@ -14,7 +15,8 @@ const router =  createRouter({
     { path: '/', component: Index },
     { path: '/basic-geometries', component: BasicGeometries },
     { path: '/css3d', component: CSS3D },
-    { path: '/gltf', component: GLTF }
+    { path: '/gltf', component: GLTF },
+    { path: '/donuts', component: Donuts }
   ]
 })
 

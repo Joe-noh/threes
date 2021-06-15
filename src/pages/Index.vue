@@ -9,6 +9,9 @@
     <li>
       <router-link to="/gltf">GLTF</router-link>
     </li>
+    <li>
+      <router-link to="/donuts">Donuts</router-link>
+    </li>
   </ul>
 </template>
 
