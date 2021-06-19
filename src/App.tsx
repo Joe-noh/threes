@@ -1,18 +1,13 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { Engine, Scene } from 'react-babylonjs'
 import { Vector3, Color3 } from '@babylonjs/core'
+import { useFullSize } from './hooks/full-size'
 
 function App() {
-  const [width, setWidth] = useState(0)
-  const [height, setHeight] = useState(0)
-
-  useEffect(() => {
-    setWidth(window.innerWidth)
-    setHeight(window.innerHeight)
-  }, [])
+  const { width, height } = useFullSize()
 
   return (
-    <Engine antialias adaptToDeviceRatio canvasId='babylon' width={width} height={height} data-testid="babylon">
+    <Engine antialias adaptToDeviceRatio canvasId='babylon' width={width} height={height}>
       <Scene>
         <arcRotateCamera name="camera" target={Vector3.Zero()} alpha={Math.PI / 3} beta={Math.PI / 4} radius={10} />
         <hemisphericLight name='light' direction={Vector3.Up()} />
