@@ -61,7 +61,7 @@ export default function Clock() {
       const minute = now.getMinutes()
 
       const longHandRotation = -2 * Math.PI * (minute / 60)
-      const shortHandRotation = -2 * Math.PI * (hour / 12)
+      const shortHandRotation = -2 * Math.PI * (hour + (minute / 60)) / 12
 
       longHand.rotation.x = longHandRotation
       shortHand.rotation.x = shortHandRotation
