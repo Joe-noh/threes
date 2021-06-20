@@ -2,6 +2,7 @@
   "name": "threes",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://joe-noh.github.io/threes/",
   "dependencies": {
     "@babylonjs/core": "^4.2.0",
     "@babylonjs/gui": "^4.2.0",
