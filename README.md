@@ -1,1 +1,1 @@
-three.js playgroud.
+WebGL Playgound.
