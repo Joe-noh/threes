@@ -8,6 +8,7 @@ export default function Index() {
       <li><Link to="/suzanne">Suzanne</Link></li>
       <li><Link to="/clock">Clock</Link></li>
       <li><Link to="/bone">Bone</Link></li>
+      <li><Link to="/can">Can</Link></li>
     </ul>
   )
 }

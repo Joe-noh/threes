@@ -5,6 +5,7 @@ import BasicGeometries from './pages/basic-geometries'
 import Suzanne from './pages/suzanne'
 import Clock from './pages/clock'
 import Bone from './pages/bone'
+import Can from './pages/can'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Route path="/suzanne" component={Suzanne} />
       <Route path="/clock" component={Clock} />
       <Route path="/bone" component={Bone} />
+      <Route path="/can" component={Can} />
     </Switch>
   )
 }
