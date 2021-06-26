@@ -7,6 +7,7 @@
     "@babylonjs/core": "^4.2.0",
     "@babylonjs/gui": "^4.2.0",
     "@babylonjs/loaders": "^4.2.0",
+    "ammo.js": "github:kripken/ammo.js",
     "react": "^17.0.2",
     "react-babylonjs": "^3.0.17",
     "react-dom": "^17.0.2",
@@ -22,6 +23,7 @@
     "@types/react": "^17.0.11",
     "@types/react-dom": "^17.0.8",
     "@types/react-router-dom": "^5.1.7",
+    "ammojs-typed": "^1.0.6",
     "react-scripts": "4.0.3",
     "typescript": "^4.3.4"
   },

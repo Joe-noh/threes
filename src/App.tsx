@@ -6,6 +6,7 @@ import Suzanne from './pages/suzanne'
 import Clock from './pages/clock'
 import Bone from './pages/bone'
 import Can from './pages/can'
+import Cloth from './pages/cloth'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Route path="/clock" component={Clock} />
       <Route path="/bone" component={Bone} />
       <Route path="/can" component={Can} />
+      <Route path="/cloth" component={Cloth} />
     </Switch>
   )
 }
