@@ -22,7 +22,11 @@ const config: Configuration = {
     })
   }),
   resolve: {
-    extensions: ['.ts', '.js']
+    extensions: ['.ts', '.js'],
+    fallback: { // for ammo.js
+      'fs': false,
+      'path': false,
+    }
   },
   module: {
     rules: [
