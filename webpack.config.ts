@@ -3,26 +3,45 @@ import HtmlWebpackPlugin from 'html-webpack-plugin'
 import fs from 'fs'
 import path from 'path'
 
-const pagesPath = path.resolve(__dirname, 'pages')
-const pages = fs.readdirSync(pagesPath).map(filename => {
-  return path.basename(filename, '.html')
+const pages = fs.readdirSync(path.resolve(__dirname, 'pages')).map(filename => {
+  return path.basename(filename, '.ts')
 })
 
 const config: Configuration = {
-  entry: Object.fromEntries(pages.map(basename => [basename, `./src/${basename}.ts`])),
+  entry: Object.fromEntries(pages.map(basename => [basename, `./pages/${basename}.ts`])),
   plugins: pages.map(basename => {
     return new HtmlWebpackPlugin({
       inject: true,
-      template: `./pages/${basename}.html`,
+      template: './index.html',
       filename: `${basename}.html`,
       chunks: [basename],
+      title: 'Threes',
+      meta: {
+        viewport: 'width=device-width, initial-scale=1'
+      }
     })
   }),
+  resolve: {
+    extensions: ['.ts', '.js']
+  },
   module: {
     rules: [
       {
         test: /\.ts$/,
         loader: 'ts-loader'
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
+      },
+      {
+        test: /\.(glb|gltf)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: { outputPath: 'assets/models/' }
+          }
+        ]
       }
     ]
   },
