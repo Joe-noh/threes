@@ -14,7 +14,8 @@ const labels = [
   'Clock',
   'Bone',
   'Can',
-  'Cloth'
+  'Cloth',
+  'ToonShader'
 ]
 
 export const routes = labels.map(label => {
